@@ -1,0 +1,132 @@
+<?php
+
+namespace Database\Seeders;
+
+use App\Models\Neighborhood;
+use Illuminate\Database\Seeder;
+
+class NeighborhoodSeeder extends Seeder
+{
+    /**
+     * Run the database seeds.
+     *
+     * @return void
+     */
+    public function run()
+    {
+        $neighborhoods = [
+            'Barrio C.E.C.O. I',
+            'Facundo Quiroga II',
+            'Luz y Fuerza II',
+            'Facundo Quiroga I',
+            'Villa Aurora',
+            'Barrio A.O.M.A.',
+            'Barrio Bancario II',
+            'Villa Mailin',
+            'Provincias Unidas',
+            'Barrio Bancario I',
+            'Nicolas Avellaneda',
+            'ACUPO I',
+            'Provincias Argentinas',
+            'Pro Casa I a IV',
+            'Roca Merlo',
+            'Barrio Norte',
+            'Barrio Isaura',
+            'Barrio Los Eucaliptus',
+            'Barrio U.O.C.R.A.',
+            'Barrio C.E.C.O. II',
+            'Villa Magdalena',
+            'Tiro Federal',
+            'Villa Floresta',
+            'Martín Fierro',
+            'Carlos Pellegrini',
+            'Barrio Jardín',
+            'Barrio San Carlos',
+            'América',
+            'Barrio U.T.A.',
+            'Centro',
+            'San Vicente',
+            'Pellegrini',
+            'Barrio Educadores',
+            'PIO I',
+            'PIO II',
+            'Barrio Sarmiento',
+            'Barrio Sarmiento Norte',
+            'El Pasillo',
+            'Pueblo Nuevo',
+            'Alberdi',
+            'Barrio Pickelado',
+            'El Progreso',
+            '12 de Octubre',
+            'ACUPO III',
+            'Barrio Belgrano',
+            'El Hornero',
+            'Villa Floresta',
+            'Barrio Lujan',
+            'Barrio Obrero',
+            'La Loma',
+            'Barrio Concejal Mario Mendez',
+            'Amparo Castro',
+            'La Candela',
+            'Pro Casa V',
+            'Barrio Escuela Nro 6',
+            'Barrio 86 Viviendas',
+            'ACUPO II',
+            'Barrio Los Inundados',
+            'Banco Provincia',
+            'Independencia',
+            'Luz y Fuerza',
+            'Barrio Municipales',
+            'Choferes',
+            'Sector 125 Viviendas - Barrio Evita',
+            'Sector 24 Viviendas',
+            'Sector 25 Viviendas',
+            'Sector 28 Viviendas',
+            'Sector 19 Viviendas',
+            'Barrio Ituzaingó',
+            'Plan Solidaridad',
+            'Plan Solidaridad',
+            'Asociacion Civil Sgto. Cabral',
+            'Barrio Atepam',
+            'Barrio 16 Viviendas',
+            'Barrio A.O.M.A. Cal y Piedra SOECO',
+            'Ex Combatientes Malvinas',
+            'Barrio Bancario III',
+            'Barrio SCAC',
+            'Trabajadores I',
+            'Barrio Operatoria BHN',
+            'Trabajadores II',
+            'Barrio Lourdes',
+            'Barrio Belén',
+            'Parque Arano',
+            'Plan Novios',
+            'Barrio Ituzaingó Norte',
+            'Barrio Matadero',
+            'Barrio Los Cuarteles',
+            'Barrio La Araña',
+            'Barrio Coronel Dorrego',
+            'San Martín',
+            '4 de Octubre',
+            'San Lorenzo',
+            'Juan Martín de Pueyrredón',
+            'Los Reseros',
+            'Santa Isabel',
+            'Barrio Paulownia',
+            'Hipólito Yrigoyen',
+            'Mariano Moreno',
+            'Los Sauces',
+            'Sauveterre',
+            'Los Robles',
+            'Plan Abuelos',
+            'Junta Vecinal 4 de Octubre',
+            'Barrio B.I.C.E.',
+            'Barrio Francisco Moreno',
+            'Villa Mailen',
+            'Costero Sur'
+        ];
+
+        foreach ($neighborhoods as $neighborhood) {
+            Neighborhood::create(['name' => $neighborhood]);
+        }
+    }
+}
